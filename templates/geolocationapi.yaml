@@ -44,9 +44,9 @@ spec:
       containers: 
         - image: "carmenpuccio/aws-otel-collector:latest"
           name: aws-otel-collector
-          # env:
-            # - name: AWS_REGION
-            #   value: "eu-west-1"           
+          env:
+            - name: AWS_REGION
+              value: "eu-west-1"           
         - image: "carmenpuccio/geolocationapi:latest"
           name: geolocationapi
           env: 
